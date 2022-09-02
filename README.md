@@ -4,7 +4,7 @@
 
 Air Manager is a work allocation system for airline cabin crews to plan their weekly work schedules and for the airline company to ensure that the required number of personnel are assigned to each airline fleet.
 
-Air Manager will allow cabin crew to indicate their availability before work allocation is assigned. Managers will then be able to view and assign the cabin crew according to the airline fleet 
+Air Manager will allow cabin crew to indicate their availability before work allocation is assigned. Managers will then be able to view and assign the cabin crew according to the airline fleet, their availability and the staff's job preference.
 
 ## Team Members
 
