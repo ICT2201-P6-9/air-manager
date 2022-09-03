@@ -1,13 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import './style.css';
+import LoginCheck from "./LoginCheck";
+import PageBanner from './PageBanner';
 import reportWebVitals from './reportWebVitals';
+import {Layout} from 'antd';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
-    <App />
+    <Layout>
+      <PageBanner />
+      <LoginCheck login_status={1}/>
+    </Layout>
   </React.StrictMode>
 );
 

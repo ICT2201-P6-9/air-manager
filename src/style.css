@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Page Banner */
+
+.pageBanner {
+  background-image: url("./res/sky_wallpaper.jpg");
+  /* background-color: skyblue; */
+  padding: 1% 0px 1% 0px;
+  border-top: 0.2em solid black;
+  border-bottom: 0.2em solid black;
+}
+
+.bannerHeader {
+  text-align: center;
+}
