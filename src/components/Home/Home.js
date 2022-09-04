@@ -1,12 +1,23 @@
-import React from "react";
+import React, {useState} from "react";
 import NavMenu from "../../Nav/NavMenu";
 import Dashboard from "../Dashboard/Dashboard";
-const Home = (userType) => {
+
+const {Sider, Content} = Layout;
+
+const Home = ({userType}) => {
+    const [currentItem, setCurrentItem] = useState('home');
+
     return(
-        <div>
-            <NavMenu userType={userType.userType}/>
-            <Dashboard />
-        </div>
+        <Layout>
+            <Sider>
+                <NavMenu userType={userType} currentItem={currentItem} setCurrentItem={setCurrentItem}/>
+            </Sider>
+            <Layout>
+                <Content className="dashboard">
+                    <Dashboard />
+                </Content>
+            </Layout>
+        </Layout>
     );
 }
 

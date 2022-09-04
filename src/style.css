@@ -15,13 +15,13 @@ code {
 /* Page Banner */
 
 .pageBanner {
-  background-image: url("./res/sky_wallpaper.jpg");
-  /* background-color: skyblue; */
-  padding: 1% 0px 1% 0px;
-  border-top: 0.2em solid black;
-  border-bottom: 0.2em solid black;
+  color: white;
+  text-align: center;
 }
 
-.bannerHeader {
-  text-align: center;
+/* Dashboard */
+
+.dashboard {
+  padding: 10px;
+  margin: 0;
 }

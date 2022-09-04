@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './style.css';
 import LoginCheck from "./components/Login/LoginCheck";
-import PageBanner from './components/Home/PageBanner';
 import reportWebVitals from './reportWebVitals';
 import {Layout} from 'antd';
 
@@ -14,6 +13,7 @@ root.render(
   <React.StrictMode>
     <Layout>
       <Header>
+        <h1 className='pageBanner'>Air Manager</h1>
       </Header>
       <LoginCheck login_status={1}/>
     </Layout>

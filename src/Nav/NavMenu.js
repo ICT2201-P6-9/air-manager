@@ -1,11 +1,9 @@
-import React, {useState} from "react";
-import {Layout, Menu,} from 'antd';
+import React from "react";
+import {Menu,} from 'antd';
 import {HomeOutlined, CalendarOutlined, UserAddOutlined, LogoutOutlined} from '@ant-design/icons';
 import 'antd/dist/antd.css';
 
-const {Sider} = Layout;
-
-const NavMenu = (userType) => {
+const NavMenu = ({userType,currentItem,setCurrentItem}) => {
     const menuItems = [
         {
             label: "Home",
@@ -14,19 +12,19 @@ const NavMenu = (userType) => {
         }
     ];
     // TODO: Implement logic for userType and menuItems
-    if (userType.userType === "staff") {
+    if (userType === "staff") {
         menuItems.push({
             label: "Edit Availbility",
             key: "edit",
             icon: <CalendarOutlined />,
         })
-    } else if (userType.userType === "manager") {
+    } else if (userType === "manager") {
         menuItems.push({
             label: "Allocate Jobs",
             key: "edit",
             icon: <CalendarOutlined />,
         })
-    } else if (userType.userType === "admin") {
+    } else if (userType === "admin") {
         menuItems.push({
             label: "Add/Remove user",
             key: "add",
@@ -38,18 +36,13 @@ const NavMenu = (userType) => {
         key: "logout",
         icon: <LogoutOutlined />,
     })
-    
-    const [currentItem, setCurrentItem] = useState('home');
-
     const menuClick = (e) => {
         console.log('click ', e);
         setCurrentItem(e.key);
     }
 
     return (
-        <Sider>
             <Menu className= "navBar" onClick={menuClick} selectedKeys={[currentItem]} mode="inline" items={menuItems} />
-        </Sider>
     );
     
 }
