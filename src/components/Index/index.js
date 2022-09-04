@@ -8,10 +8,13 @@ import {Layout} from 'antd';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
+const {Header} = Layout;
+
 root.render(
   <React.StrictMode>
     <Layout>
-      <PageBanner />
+      <Header>
+      </Header>
       <LoginCheck login_status={1}/>
     </Layout>
   </React.StrictMode>

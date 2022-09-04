@@ -1,7 +1,9 @@
 import React, {useState} from "react";
-import {Menu} from 'antd';
-import {HomeOutlined, CalendarOutlined} from '@ant-design/icons';
+import {Layout, Menu,} from 'antd';
+import {HomeOutlined, CalendarOutlined, UserAddOutlined, LogoutOutlined} from '@ant-design/icons';
 import 'antd/dist/antd.css';
+
+const {Sider} = Layout;
 
 const NavMenu = (userType) => {
     const menuItems = [
@@ -18,13 +20,24 @@ const NavMenu = (userType) => {
             key: "edit",
             icon: <CalendarOutlined />,
         })
-    } else if (userType.userType === "Manager") {
+    } else if (userType.userType === "manager") {
         menuItems.push({
             label: "Allocate Jobs",
             key: "edit",
             icon: <CalendarOutlined />,
         })
+    } else if (userType.userType === "admin") {
+        menuItems.push({
+            label: "Add/Remove user",
+            key: "add",
+            icon: <UserAddOutlined />,
+        })
     }
+    menuItems.push({
+        label: "Logout",
+        key: "logout",
+        icon: <LogoutOutlined />,
+    })
     
     const [currentItem, setCurrentItem] = useState('home');
 
@@ -34,7 +47,9 @@ const NavMenu = (userType) => {
     }
 
     return (
-        <Menu onClick={menuClick} selectedKeys={[currentItem]} mode="horizontal" items={menuItems} />
+        <Sider>
+            <Menu className= "navBar" onClick={menuClick} selectedKeys={[currentItem]} mode="inline" items={menuItems} />
+        </Sider>
     );
     
 }
