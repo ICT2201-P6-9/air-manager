@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './style.css';
-import LoginCheck from "./LoginCheck";
-import PageBanner from './PageBanner';
+import LoginCheck from "./components/Login/LoginCheck";
+import PageBanner from './components/Home/PageBanner';
 import reportWebVitals from './reportWebVitals';
 import {Layout} from 'antd';
 

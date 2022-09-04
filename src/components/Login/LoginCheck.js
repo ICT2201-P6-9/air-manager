@@ -1,5 +1,5 @@
 import React from "react";
-import Home from './Home';
+import Home from '../Home/Home';
 
 const LoginCheck = ({login_status}) => {
     // TODO: Add login screen integration

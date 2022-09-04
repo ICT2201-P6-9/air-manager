@@ -1,6 +1,6 @@
 import React from "react";
-import NavMenu from "./NavMenu";
-import Dashboard from "./Dashboard";
+import NavMenu from "../../Nav/NavMenu";
+import Dashboard from "../Dashboard/Dashboard";
 const Home = (userType) => {
     return(
         <div>
