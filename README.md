@@ -21,11 +21,11 @@ https://marvelapp.com/prototype/j3265b1 <br>
 
 Clicking anywhere on the screen will highlight all of the clickable elements in the prototype in blue. 
 
-<img src="./Imgs/Highlights.png" alt="Clickable spots highlight" style="text-align:center"/>
+<img src="./Imgs/Highlights.PNG" alt="Clickable spots highlight" style="text-align:center"/>
 
 You can also move on to the next screen by moving your mouse to the left/right side of the screen and clicking on the arrow button.
 
-<img src="./Imgs/Navigate Screens.png" alt="Screen navigation" />
+<img src="./Imgs/Navigate Screens.PNG" alt="Screen navigation" />
 
 You can also view all screens in the prototype by pressing "h" or clicking on the following button in the menu found on the bottom right.
 
