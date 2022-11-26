@@ -7,7 +7,6 @@ Air Manager is a work allocation system for airline cabin crews to plan their we
 Air Manager will allow cabin crew to indicate their availability before work allocation is assigned. Managers will then be able to view and assign the cabin crew according to the airline fleet.  The purpose of this software is to allow all employees to manage their working hours and ensure that all working hour regulations are adhered to.
 
 <br>
-<br>
 
 # Prototype Usage
 **Prototype Link:** <br>
@@ -31,7 +30,6 @@ You can also view all screens in the prototype by pressing "h" or clicking on th
 
 <img src="./Imgs/View all screens.PNG" alt="Screen navigation" style="text-align:center"/>
 
-<br>
 <br>
 
 # Prototype Page Reference
@@ -67,7 +65,6 @@ The first section of the prototype showcases the admin page's features, and is c
 - Page 32-35: Staff job assignment rejection
 - Page 36-38: Staff availability
 
-<br>
 <br>
 
 # Navigation order
@@ -132,7 +129,6 @@ This is a rough step by step guide to show the intended navigation of the protot
 16. (Page 37) The availability dropdown menu can be closed by clicking on the box corresponding to the date.
 17. (Page 36) End of features shown in prototype
 
-<br>
 <br>
 
 # Team Members
